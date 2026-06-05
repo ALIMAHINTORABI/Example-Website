@@ -1,16 +1,24 @@
+# Azure .NET Web App
 
+This ZIP contains a simple ASP.NET Core web app for Azure App Service.
 
-Using a react template for Frankie's Bakery 
+Recommended Azure settings:
+- Publish: Code
+- Runtime stack: .NET 8 (LTS)
+- Operating System: Linux or Windows
+- Pricing plan: Free F1 if available
 
+File structure:
+- AzureDotNetWebApp.csproj
+- Program.cs
+- wwwroot/index.html
+- wwwroot/style.css
+- wwwroot/script.js
+- wwwroot/images/logo.svg
 
----NOTE:
-Frankie's Bakery is a fictional business created for demonstrative purposes only
+Health check:
+- /health
 
-
----WEBSITE TEMPLATE---
-The original Author of the Template that is used came from the following two sources
-
-From Author template
-https://react-landing-page-template-93ne.vercel.app/#contact
-
-https://github.com/issaafalkattan/React-Landing-Page-Template/tree/master
+Important:
+If Azure still shows "Current Limit (Total VMs): 0", the issue is your Azure subscription quota,
+not this ZIP file.
